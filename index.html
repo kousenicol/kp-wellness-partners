@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K&P Wellness Partners | Professional Acupuncture & TCM Dispatch Services</title>
+    <meta name="description" content="K&P Wellness Partners dispatches certified practitioners to rehab centers, physiotherapy clinics, spas, and more in Ontario, specializing in acupuncture, TCM, and herbal medicine.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .logo-font { font-family: 'Great Vibes', cursive; }
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #fdfbf7 0%, #ffffff 100%);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #f59e0b 100%);
+        }
+        .navy-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 glass border-b border-amber-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2 group cursor-pointer">
+                    <div class="w-20 h-20 relative flex items-center justify-center transition-all group-hover:scale-110">
+                        <img src="./kp_logo_white.jpg" alt="K&P Wellness Partners Logo" class="w-full h-full object-contain" style="mix-blend-mode: darken; filter: brightness(1.1) contrast(1.1);">
+                    </div>
+                    <span class="text-3xl font-bold text-slate-900 tracking-tight whitespace-nowrap">K&P Wellness Partners</span>
+                </div>
+                <nav class="hidden md:flex ml-8 space-x-5 text-sm font-medium text-slate-600">
+                    <a href="#about" class="hover:text-blue-600 transition">About Us</a>
+                    <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                    <a href="#treatments" class="hover:text-blue-600 transition">What We Treat</a>
+                    <a href="#detox" class="hover:text-blue-600 transition">Weight & Detox</a>
+                    <a href="#gongjindan" class="hover:text-blue-600 transition">Gongjindan</a>
+                    <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+                </nav>
+                <div>
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition shadow-lg shadow-blue-100">
+                        Request Dispatch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 hero-gradient overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 lg:pr-12">
+                    <span class="inline-block px-4 py-1.5 mb-6 text-amber-700 bg-amber-50 rounded-full text-xs font-bold uppercase tracking-wider border border-amber-100">
+                        Premium Acupuncture & TCM Dispatch
+                    </span>
+                    <h1 class="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+                        Excellence in <span class="text-amber-600">Acupuncture & TCM</span> Solutions.
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        We connect world-class Acupuncture & TCM practitioners with leading healthcare facilities and wellness centers. Elevate your clinic's care with our professional dispatch services.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+
+                        <a href="#services" class="flex items-center justify-center px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-xl font-bold hover:bg-slate-50 transition">
+                            Our Services
+                        </a>
+                    </div>
+                    <div class="mt-10 flex items-center space-x-6">
+                        <div class="flex -space-x-3">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71f1e598c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-4 border-white object-cover">
+                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-4 border-white object-cover">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-4 border-white object-cover">
+                        </div>
+                        <p class="text-sm text-slate-500 font-medium">Trusted by <span class="text-amber-600 font-bold">50+</span> Clinics in Ontario</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-12 lg:mt-0 relative">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+                    <div class="absolute -bottom-10 -right-10 w-60 h-60 bg-blue-200 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                        <!-- Replaced with generic placeholder since generated image path is dynamic -->
+                        <img src="./acupuncture_service.png" alt="Professional Acupuncture Service" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-10">
+                <div class="lg:w-2/5 relative">
+                    <div class="absolute -top-10 -left-10 w-64 h-64 bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
+                    <div class="relative grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-slate-100 rounded-3xl h-56 flex items-center justify-center p-6 text-center shadow-sm border border-slate-200">
+                            <div>
+                                <span class="block text-4xl font-bold text-blue-600 mb-2">100%</span>
+                                <span class="text-sm font-bold text-slate-500 uppercase tracking-widest">CTCMPAO<br>Registered Professionals</span>
+                            </div>
+                        </div>
+                        <div class="bg-slate-900 rounded-3xl h-56 flex items-center justify-center p-6 text-center text-white shadow-xl">
+                            <div>
+                                <i class="fas fa-shield-check text-blue-400 text-4xl mb-4"></i>
+                                <span class="text-sm font-bold uppercase tracking-widest leading-tight">Full Liability<br>Insurance Coverage</span>
+                            </div>
+                        </div>
+                        <div class="bg-blue-600 rounded-3xl h-56 flex items-center justify-center p-6 text-center text-white shadow-xl sm:col-span-2">
+                            <div class="flex items-center space-x-6">
+                                <i class="fas fa-microchip text-white text-5xl"></i>
+                                <div class="text-left">
+                                    <span class="block text-xl font-bold uppercase tracking-wide">Innovative Korean Technology</span>
+                                    <span class="text-blue-100 text-sm">Certified magnetic needles & specialized devices</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/5">
+                    <span class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4 block">About K&P Wellness Partners</span>
+                    <h2 class="text-4xl font-bold text-slate-900 mb-8 leading-tight">Bringing Innovative <span class="text-blue-600">Korean Technology</span> to Ontario's Wellness.</h2>
+                    
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        We are a team of professional practitioners registered with the <strong>College of Traditional Chinese Medicine Practitioners and Acupuncturists of Ontario (CTCMPAO)</strong>, specializing in both Acupuncture and Traditional Chinese Medicine (TCM). At <strong>K&P Wellness Partners</strong>, our mission is to provide premium, mobile treatment solutions and natural herbal medicine that elevate your facility's care.
+                    </p>
+                    
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 flex-shrink-0 flex items-center justify-center text-blue-600">
+                                <i class="fas fa-truck-medical"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-slate-900 mb-1">Fully Equipped Mobile Experts</h4>
+                                <p class="text-slate-500">With full liability insurance, our specialists arrive at your clinic or office with all necessary supplies, ready to treat your patients immediately.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 flex-shrink-0 flex items-center justify-center text-blue-600">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-slate-900 mb-1">Innovative Korean Technology</h4>
+                                <p class="text-slate-500">We utilize unique Magnetic Acupuncture Needles and specialized Magnetic Electric Devices—certified in Korea and exclusively available through our service in Ontario.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-slate-600 italic border-l-4 border-amber-500 pl-6 py-2">
+                        "Elevate your clinic with a unique style of acupuncture, TCM, and state-of-the-art equipment that distinguishes your practice from the rest."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners / Dispatch To -->
+    <section id="partners" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Where We Dispatch</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">We provide professional Acupuncture & TCM services to a wide range of specialized facilities.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                <div class="flex flex-col items-center p-6 bg-slate-50 rounded-2xl border border-slate-100 transition-all hover:bg-white hover:shadow-lg">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-wheelchair"></i>
+                    </div>
+                    <span class="font-semibold text-sm text-slate-700">Rehab Centers</span>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-slate-50 rounded-2xl border border-slate-100 transition-all hover:bg-white hover:shadow-lg">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-hand-holding-medical"></i>
+                    </div>
+                    <span class="font-semibold text-sm text-slate-700 text-center">Physiotherapy</span>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-slate-50 rounded-2xl border border-slate-100 transition-all hover:bg-white hover:shadow-lg">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <span class="font-semibold text-sm text-slate-700">Chiropractic</span>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-slate-50 rounded-2xl border border-slate-100 transition-all hover:bg-white hover:shadow-lg">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <span class="font-semibold text-sm text-slate-700">Wellness & Spa</span>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-slate-50 rounded-2xl border border-slate-100 transition-all hover:bg-white hover:shadow-lg">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <span class="font-semibold text-sm text-slate-700 text-center">Medi-Skin Care</span>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-slate-50 rounded-2xl border border-slate-100 transition-all hover:bg-white hover:shadow-lg">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-hospital-alt"></i>
+                    </div>
+                    <span class="font-semibold text-sm text-slate-700">Medical Clinics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Detail -->
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row justify-between items-end mb-16">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold text-slate-900 mb-4">Professionalism in Every Treatment</h2>
+                    <p class="text-slate-600">Our dispatch services are designed to integrate seamlessly with your existing medical or wellness operations.</p>
+                </div>
+
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover">
+                    <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-slate-100">
+                        <i class="fas fa-certificate text-amber-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Certified Providers</h3>
+                    <p class="text-slate-500 leading-relaxed">Our practitioners are fully certified in Acupuncture & TCM, insured, and highly experienced.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover">
+                    <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-slate-100">
+                        <i class="fas fa-leaf text-amber-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Natural Herbal Medicine</h3>
+                    <p class="text-slate-500 leading-relaxed">We provide premium herbal medicine using ingredients mostly certified in Korea for safe and natural healing.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover">
+                    <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-slate-100">
+                        <i class="fas fa-clock text-amber-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Flexible Scheduling</h3>
+                    <p class="text-slate-500 leading-relaxed">Even for a single patient, we dispatch our top-tier practitioners to ensure the best care.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover">
+                    <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-slate-200">
+                        <i class="fas fa-shield-alt text-amber-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Premium Equipment</h3>
+                    <p class="text-slate-500 leading-relaxed">We use Korea-certified needles and specialized devices for a unique therapeutic approach.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- What We Treat Section -->
+    <section id="treatments" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-amber-600 font-bold uppercase tracking-widest text-sm mb-4 block">Our Expertise</span>
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">What We Treat</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Providing holistic solutions for a wide range of physical and mental health conditions through Acupuncture & TCM.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-xl group">
+                    <div class="w-12 h-12 bg-slate-900 text-amber-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Pain Management</h4>
+                    <p class="text-slate-500 text-sm">Chronic back, neck, shoulder, and joint pain, migraines, and sciatica.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-xl group">
+                    <div class="w-12 h-12 bg-slate-900 text-amber-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Weight & Detox</h4>
+                    <p class="text-slate-500 text-sm">16-day specialized program for metabolism boost and total body detoxification.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-xl group">
+                    <div class="w-12 h-12 bg-slate-900 text-amber-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-mars"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Men's Health</h4>
+                    <p class="text-slate-500 text-sm">Specialized support for stamina, vitality, stress relief, and overall well-being for men.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-xl group">
+                    <div class="w-12 h-12 bg-slate-900 text-amber-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-venus"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Women's Health</h4>
+                    <p class="text-slate-500 text-sm">PMS, menopause symptoms, and fertility support.</p>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <p class="text-slate-600 font-medium italic">...and many more conditions tailored to your body's specific needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weight & Detox Section -->
+    <section id="detox" class="py-24 bg-slate-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
+                        <img src="./detox_flyer.jpg" alt="16-Day Korean Style Detox Flyer" class="w-full h-auto">
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <span class="inline-block px-4 py-1.5 mb-6 text-green-600 bg-green-50 rounded-full text-xs font-bold uppercase tracking-wider">
+                        100% Natural & Chemical-Free
+                    </span>
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                        Specialized <span class="text-blue-600">Weight Management</span> & Detox Program
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Experience our renowned <strong>16-Day Korean-Style Package</strong>. Designed for those seeking a healthier, lighter, and more vibrant lifestyle through holistic K-Culture wellness.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <span class="text-slate-700 font-medium">Full TCM Assessment</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <span class="text-slate-700 font-medium">Magnetic Electro-Acupuncture</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <span class="text-slate-700 font-medium">Personalized Herbal Medicine</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <span class="text-slate-700 font-medium">Customized Meal Plan</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
+                        <h4 class="text-xl font-bold text-slate-900 mb-2 italic">"Achieve your body goals the Korean way."</h4>
+                        <p class="text-slate-500">Naturally, in harmony with nature, beautifully.</p>
+                    </div>
+                    <div class="mt-10">
+                        <a href="#contact" class="inline-block px-10 py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-slate-800 transition shadow-xl">
+                            Start Your Journey Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gongjindan Section -->
+    <section id="gongjindan" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+                <div class="lg:w-1/2">
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-slate-50">
+                            <img src="./gongjindan_emperor.jpg" alt="Gongjindan The Emperor's Medicine" class="w-full h-auto">
+                        </div>
+                        <div class="relative rounded-[2rem] overflow-hidden shadow-xl border-4 border-slate-50">
+                            <img src="./gongjindan_benefits.jpg" alt="Benefits of Gongjindan" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <span class="inline-block px-4 py-1.5 mb-6 text-amber-600 bg-amber-50 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Premium Herbal Elixir
+                    </span>
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                        The Emperor's Medicine: <span class="text-amber-600">Gongjindan</span>
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        For centuries, this legendary herbal tonic was reserved exclusively for the Korean Royal Court. Crafted with rare, premium ingredients, it is the most prestigious supplement for your mind and body.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mb-10">
+                        <div class="flex items-start space-x-3">
+                            <div class="text-amber-600 mt-1"><i class="fas fa-shield-virus"></i></div>
+                            <span class="text-slate-700 font-medium text-sm">Immune Function Support</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="text-amber-600 mt-1"><i class="fas fa-hourglass-half"></i></div>
+                            <span class="text-slate-700 font-medium text-sm">Anti-Aging & Vitality</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="text-amber-600 mt-1"><i class="fas fa-bolt"></i></div>
+                            <span class="text-slate-700 font-medium text-sm">Energy & Stamina Boost</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="text-amber-600 mt-1"><i class="fas fa-mars"></i></div>
+                            <span class="text-slate-700 font-medium text-sm">Men's Health Support</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="text-amber-600 mt-1"><i class="fas fa-heart"></i></div>
+                            <span class="text-slate-700 font-medium text-sm">Heart & Circulatory Health</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="text-amber-600 mt-1"><i class="fas fa-leaf"></i></div>
+                            <span class="text-slate-700 font-medium text-sm">Liver Detoxification</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="text-amber-600 mt-1"><i class="fas fa-spa"></i></div>
+                            <span class="text-slate-700 font-medium text-sm">Stress Relief & Well-being</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="text-amber-600 mt-1"><i class="fas fa-utensils"></i></div>
+                            <span class="text-slate-700 font-medium text-sm">Digestion & Absorption</span>
+                        </div>
+                    </div>
+                    <div class="bg-amber-50 p-8 rounded-3xl border border-amber-100 shadow-sm">
+                        <h4 class="text-xl font-bold text-amber-900 mb-2 italic">"Experience the Wisdom, Live Like Royalty."</h4>
+                        <p class="text-amber-800/80">왕의 선택, 당신의 건강. Crafted with Korean Royal Court wisdom.</p>
+                    </div>
+                    <div class="mt-10">
+                        <a href="#contact" class="inline-block px-10 py-4 bg-amber-600 text-white rounded-2xl font-bold hover:bg-amber-700 transition shadow-xl shadow-amber-200">
+                            Inquire About Gongjindan
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 navy-gradient relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-white opacity-10 rounded-full -mr-48 -mt-48"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-white mb-6">Ready to expand your services?</h2>
+                <p class="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">Join the dozens of facilities in Ontario that trust K&P Wellness Partners for professional Acupuncture & TCM dispatch.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="tel:6479832684" class="px-8 py-4 bg-white text-blue-600 rounded-xl font-bold hover:bg-blue-50 transition shadow-xl">
+                        Call Now: (647) 983-2684
+                    </a>
+                    <a href="mailto:drnicholaskim@gmail.com" class="px-8 py-4 bg-amber-500 text-white border border-amber-400 rounded-xl font-bold hover:bg-amber-600 transition shadow-xl">
+                        Email Inquiry
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="bg-slate-900 pt-24 pb-12 text-slate-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-20 h-20 relative flex items-center justify-center">
+                            <img src="./kp_logo_white.jpg" alt="K&P Wellness Partners Logo" class="w-full h-full object-contain" style="mix-blend-mode: darken; filter: brightness(1.1) contrast(1.1);">
+                        </div>
+                        <span class="text-3xl font-bold text-white tracking-tight">K&P Wellness Partners</span>
+                    </div>
+                    <p class="text-slate-400 mb-8 max-w-md">The leading Acupuncture & TCM dispatch service in Ontario. Dedicated to professional care and clinical excellence.</p>
+                    <div class="space-y-6">
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-blue-400">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Phone</h4>
+                                <p>(647) 983-2684</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-blue-400">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Email</h4>
+                                <p><a href="mailto:drnicholaskim@gmail.com" class="hover:text-blue-400 transition">drnicholaskim@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold text-white mb-6">Send an Inquiry</h3>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-5 py-3 focus:outline-none focus:border-blue-500 transition">
+                            <input type="email" placeholder="Business Email" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-5 py-3 focus:outline-none focus:border-blue-500 transition">
+                        </div>
+                        <select class="w-full bg-slate-900 border border-slate-700 rounded-xl px-5 py-3 focus:outline-none focus:border-blue-500 transition">
+                            <option>Facility Type</option>
+                            <option>Rehab Center</option>
+                            <option>Physiotherapy Clinic</option>
+                            <option>Wellness/Spa</option>
+                            <option>Other</option>
+                        </select>
+                        <textarea rows="4" placeholder="How can we help?" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-5 py-3 focus:outline-none focus:border-blue-500 transition"></textarea>
+                        <button class="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition shadow-lg shadow-blue-900/50">
+                            Submit Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:row justify-between items-center text-sm text-slate-500">
+                <p>&copy; 2026 K&P Wellness Partners. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
