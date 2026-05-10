@@ -281,45 +281,105 @@
         </div>
     </section>
     <!-- What We Treat Section -->
-    <section id="treatments" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="text-amber-600 font-bold uppercase tracking-widest text-sm mb-4 block">Our Expertise</span>
-                <h2 class="text-4xl font-bold text-slate-900 mb-4">What We Treat</h2>
-                <p class="text-slate-500 max-w-2xl mx-auto">Providing holistic solutions for a wide range of physical and mental health conditions through Acupuncture & TCM.</p>
+    <section id="treatments" class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-20">
+                <span class="inline-block px-4 py-1 mb-4 text-blue-600 bg-blue-50 rounded-full text-xs font-bold uppercase tracking-widest border border-blue-100">
+                    Clinical Excellence
+                </span>
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-slate-900 mb-6">What We <span class="text-blue-600">Treat</span></h2>
+                <div class="w-20 h-1.5 bg-amber-500 mx-auto rounded-full mb-8"></div>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    We provide specialized Acupuncture &amp; TCM solutions for a wide spectrum of health conditions, integrating ancient wisdom with modern clinical precision.
+                </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-xl group">
-                    <div class="w-12 h-12 bg-slate-900 text-amber-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-bone"></i>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Pain Management -->
+                <div class="group relative bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-50 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mb-8 shadow-xl shadow-slate-200 group-hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fas fa-hand-holding-medical text-amber-400 text-2xl group-hover:text-white"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-4">Pain &amp; Orthopedics</h4>
+                        <p class="text-slate-500 leading-relaxed text-sm">Expert relief for chronic back pain, neck stiffness, joint issues, sciatica, and post-surgical recovery.</p>
+                        <div class="mt-6 flex items-center text-blue-600 font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-all">
+                            <span>Learn More</span>
+                            <i class="fas fa-chevron-right ml-2 text-[10px]"></i>
+                        </div>
                     </div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-2">Pain Management</h4>
-                    <p class="text-slate-500 text-sm">Chronic back, neck, shoulder, and joint pain, migraines, and sciatica.</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-xl group">
-                    <div class="w-12 h-12 bg-slate-900 text-amber-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-leaf"></i>
+
+                <!-- Specialized Detox -->
+                <div class="group relative bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 overflow-hidden border-t-4 border-t-amber-400">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-amber-50 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mb-8 shadow-xl shadow-slate-200 group-hover:bg-amber-500 transition-colors duration-300">
+                            <i class="fas fa-leaf text-amber-400 text-2xl group-hover:text-white"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-4">Weight &amp; Detox</h4>
+                        <p class="text-slate-500 leading-relaxed text-sm">Our signature 16-Day Korean Detox program. A holistic approach to metabolism, digestion, and metabolic health.</p>
+                        <div class="mt-6 flex items-center text-amber-600 font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-all">
+                            <span>16-Day Package</span>
+                            <i class="fas fa-chevron-right ml-2 text-[10px]"></i>
+                        </div>
                     </div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-2">Specialized Weight Management Or <span class="text-red-600">Detox</span> Program</h4>
-                    <p class="text-slate-500 text-sm">Experience our renowned 16-Day Korean-Style Package. Designed for those seeking a healthier, lighter, and more vibrant lifestyle through holistic K-Culture wellness.</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-xl group">
-                    <div class="w-12 h-12 bg-slate-900 text-amber-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-mars"></i>
+
+                <!-- Men's Health -->
+                <div class="group relative bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-slate-50 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mb-8 shadow-xl shadow-slate-200 group-hover:bg-slate-700 transition-colors duration-300">
+                            <i class="fas fa-mars text-amber-400 text-2xl group-hover:text-white"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-4">Men's Vitality</h4>
+                        <p class="text-slate-500 leading-relaxed text-sm">Specialized TCM protocols for stamina, stress management, hormonal balance, and overall physical performance.</p>
+                        <div class="mt-6 flex items-center text-slate-600 font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-all">
+                            <span>Clinical Care</span>
+                            <i class="fas fa-chevron-right ml-2 text-[10px]"></i>
+                        </div>
                     </div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-2">Men's Health</h4>
-                    <p class="text-slate-500 text-sm">Specialized support for stamina, vitality, stress relief, and overall well-being for men.</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-xl group">
-                    <div class="w-12 h-12 bg-slate-900 text-amber-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-venus"></i>
+
+                <!-- Women's Health -->
+                <div class="group relative bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-pink-50 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mb-8 shadow-xl shadow-slate-200 group-hover:bg-pink-600 transition-colors duration-300">
+                            <i class="fas fa-venus text-amber-400 text-2xl group-hover:text-white"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-4">Women's Wellness</h4>
+                        <p class="text-slate-500 leading-relaxed text-sm">Comprehensive support for reproductive health, menopause management, stress relief, and endocrine balance.</p>
+                        <div class="mt-6 flex items-center text-pink-600 font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-all">
+                            <span>Natural Care</span>
+                            <i class="fas fa-chevron-right ml-2 text-[10px]"></i>
+                        </div>
                     </div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-2">Women's Health</h4>
-                    <p class="text-slate-500 text-sm">PMS, menopause symptoms, and fertility support.</p>
                 </div>
             </div>
-            <div class="mt-12 text-center">
-                <p class="text-slate-600 font-medium italic">...and many more conditions tailored to your body's specific needs.</p>
+
+            <div class="mt-20 text-center">
+                <div class="inline-flex items-center gap-4 bg-white px-8 py-4 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="flex -space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center border-2 border-white"><i class="fas fa-brain text-[10px] text-blue-600"></i></div>
+                        <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center border-2 border-white"><i class="fas fa-heart text-[10px] text-amber-600"></i></div>
+                        <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center border-2 border-white"><i class="fas fa-spa text-[10px] text-emerald-600"></i></div>
+                    </div>
+                    <p class="text-slate-600 font-medium text-sm">We also treat migraines, anxiety, insomnia, and various digestive disorders.</p>
+                </div>
             </div>
         </div>
     </section>
