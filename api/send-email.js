@@ -69,10 +69,10 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'K&P Wellness <onboarding@resend.dev>',
+        from: 'K&P Wellness Partners <onboarding@resend.dev>',
         to: ['drnicholaskim@gmail.com'],
         reply_to: email,
-        subject: `[K&P Wellness] New Inquiry from ${name}`,
+        subject: `[K&P Wellness Partners] New Inquiry from ${name}`,
         html: htmlBody,
       }),
     });
