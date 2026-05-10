@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="VCTrnpp8KYVcEpmOCN9ALWwX5Pq9c5tTs6DpJnrZR8E" />
     <title>K&amp;P Wellness Partners | #1 Acupuncture &amp; TCM Dispatch Ontario (KNP)</title>
-    <meta name="description" content="K&amp;P Wellness Partners (KNP) is Ontario's leading professional Acupuncture &amp; TCM dispatch service. Certified practitioners for rehab centers, clinics, and private clients. 16-Day Korean Detox &amp; Gongjindan expert.">
+    <meta name="description" content="&quot;Even for a single patient, we dispatch the best acupuncturists.&quot; K&amp;P Wellness Partners (KNP) is Ontario's leading professional Acupuncture &amp; TCM dispatch service. Certified practitioners for rehab centers, clinics, and private clients.">
     <meta name="keywords" content="Acupuncture Dispatch Ontario, K&amp;P Wellness, KNP Acupuncture, Korean TCM Toronto, Mobile Acupuncturist, Gongjindan Canada, 16-Day Detox Korean, Traditional Chinese Medicine Ontario">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://www.knpwellnesspartners.ca/">
@@ -20,16 +20,12 @@
       "url": "https://www.knpwellnesspartners.ca/",
       "logo": "https://www.knpwellnesspartners.ca/kp_logo_final.png",
       "image": "https://www.knpwellnesspartners.ca/kp_logo_final.png",
-      "description": "Professional Acupuncture & TCM practitioner dispatch services in Ontario.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "Ontario",
-        "addressCountry": "CA"
+      "description": "Professional Acupuncture & TCM practitioner dispatch services in Ontario. Even for a single patient, we dispatch the best acupuncturists.",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Ontario"
       },
-      "geo": {
-        "@type": "GeoShape",
-        "region": "Ontario"
-      },
+      "publicAccess": false,
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Wellness Services",
@@ -80,11 +76,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.knpwellnesspartners.ca/">
     <meta property="og:title" content="K&amp;P Wellness Partners | Professional Acupuncture Dispatch">
-    <meta property="og:description" content="Leading Acupuncture & TCM dispatch services (KNP) for facilities and private clients in Ontario. Premium Korean technology.">
+    <meta property="og:description" content="&quot;Even for a single patient, we dispatch the best acupuncturists.&quot; Leading Acupuncture & TCM dispatch services (KNP) for facilities and private clients in Ontario.">
     <meta property="og:image" content="https://www.knpwellnesspartners.ca/kp_logo_final.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="K&amp;P Wellness Partners | KNP Acupuncture">
-    <meta name="twitter:description" content="Professional Acupuncture dispatch services in Ontario.">
+    <meta name="twitter:description" content="&quot;Even for a single patient, we dispatch the best acupuncturists.&quot; Professional Acupuncture dispatch services in Ontario.">
     <meta name="twitter:image" content="https://www.knpwellnesspartners.ca/kp_logo_final.png">
 
     <link rel="icon" type="image/png" href="./kp_logo_final.png">
@@ -115,13 +111,48 @@
             transform: translateY(-5px);
             transition: all 0.3s ease;
         }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .marquee-content {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%;
+            animation: marquee 20s linear infinite;
+        }
+        .shimmer-text {
+            background: linear-gradient(90deg, #d4af37 0%, #fef08a 25%, #ffffff 50%, #fef08a 75%, #d4af37 100%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shimmer 3s linear infinite;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        @keyframes shimmer {
+            to { background-position: 200% center; }
+        }
+        .fade-edges {
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-slate-800">
 
+    <!-- Top Marquee Banner -->
+    <div class="fixed top-0 w-full z-[60] bg-slate-900 border-b border-amber-500/30">
+        <div class="w-full overflow-hidden fade-edges flex items-center h-9 sm:h-10">
+            <div class="marquee-content">
+                <span class="shimmer-text text-[13px] sm:text-sm">✨ "Even for a single patient, we dispatch the best acupuncturists." ✨</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
-    <!-- Header -->
-    <header class="fixed w-full z-50 glass border-b border-amber-100">
+    <header class="fixed top-9 sm:top-10 w-full z-50 glass border-b border-amber-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <a href="/" class="flex items-center space-x-1.5 sm:space-x-3 group cursor-pointer">
@@ -185,7 +216,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 hero-gradient overflow-hidden">
+    <section class="pt-36 pb-20 hero-gradient overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center">
                 <div class="lg:w-1/2 lg:pr-12">
@@ -196,6 +227,7 @@
                         Excellence in <span class="text-amber-600">Acupuncture & TCM</span> Solutions.
                     </h1>
                     <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        <strong class="text-slate-800 font-semibold italic block mb-3">"Even for a single patient, we dispatch the best acupuncturists."</strong>
                         We connect world-class Acupuncture & TCM practitioners with leading healthcare facilities and wellness centers. Elevate your clinic's care with our professional dispatch services.
                     </p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -731,6 +763,12 @@
                         <span class="text-3xl font-extrabold tracking-tight text-white">K&amp;P Wellness Partners</span>
                     </a>
                     <p class="text-slate-400 mb-8 max-w-md">The leading Acupuncture & TCM dispatch service in Ontario. Dedicated to professional care and clinical excellence.</p>
+                    <div class="mb-8 p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50">
+                        <p class="text-amber-500 font-bold text-xs uppercase tracking-widest mb-1 flex items-center gap-2">
+                            <i class="fas fa-truck-medical"></i> Mobile Dispatch Only
+                        </p>
+                        <p class="text-slate-400 text-sm">We provide on-site services to facilities and private clients across Ontario. No walk-in clinic available.</p>
+                    </div>
                     <div class="space-y-6">
 
                         <div class="flex items-start space-x-4">
