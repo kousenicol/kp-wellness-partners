@@ -46,7 +46,7 @@
                     <span class="text-lg sm:text-2xl lg:text-3xl font-bold text-slate-900 tracking-tight whitespace-nowrap">K&amp;P Wellness Partners</span>
                 </a>
                 <!-- Desktop Nav -->
-                <nav class="hidden md:flex ml-4 lg:ml-8 space-x-1 lg:space-x-2 text-[12px] lg:text-[13px] font-bold text-slate-700">
+                <nav class="hidden md:flex ml-4 lg:ml-8 items-center flex-nowrap whitespace-nowrap space-x-1 lg:space-x-1 text-[11px] lg:text-[13px] font-bold text-slate-700">
                     <a href="#about" class="px-3 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition-all flex items-center gap-1.5">
                         <i class="fas fa-info-circle text-blue-500/70 text-[10px]"></i>
                         About Us
@@ -649,9 +649,9 @@
             </div>
             <div class="border-t border-slate-800 pt-8 flex flex-col md:row justify-between items-center text-sm text-slate-500">
                 <p>&copy; 2026 K&amp;P Wellness Partners. All rights reserved.</p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
+                <div class="flex gap-8 text-sm text-slate-400">
                     <a href="#" class="hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    <a href="javascript:void(0)" onclick="openTermsModal()" class="hover:text-white transition">Terms of Service</a>
                 </div>
             </div>
         </div>
@@ -761,6 +761,59 @@
         </div>
     </div>
 
+    <!-- Terms of Service Modal -->
+    <div id="termsModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-slate-900/90 backdrop-blur-sm" onclick="closeTermsModal(event)">
+        <div class="bg-white rounded-[2rem] w-full max-w-2xl max-h-[80vh] overflow-hidden shadow-2xl flex flex-col" onclick="event.stopPropagation()">
+            <div class="p-8 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900">Terms of Service</h3>
+                    <p class="text-sm text-slate-500">Effective Date: May 10, 2026</p>
+                </div>
+                <button onclick="closeTermsModal()" class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-slate-400 hover:text-slate-900 transition border border-slate-100">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-10 overflow-y-auto text-slate-600 leading-relaxed space-y-8">
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i class="fas fa-handshake text-blue-600"></i>
+                        1. Nature of Service
+                    </h4>
+                    <p class="text-sm">K&amp;P Wellness Partners provides professional Acupuncture &amp; TCM practitioner dispatch services. We act as an intermediary connecting certified practitioners with healthcare facilities and private clients. All practitioners dispatched are independent professionals registered with the CTCMPAO.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i class="fas fa-exclamation-triangle text-amber-600"></i>
+                        2. Medical Disclaimer
+                    </h4>
+                    <p class="text-sm">The content on this website is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. Always seek the advice of a qualified healthcare provider regarding any medical condition.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i class="fas fa-shield-alt text-emerald-600"></i>
+                        3. Limitation of Liability
+                    </h4>
+                    <p class="text-sm">K&amp;P Wellness Partners shall not be liable for any direct, indirect, or incidental damages resulting from the use of our dispatch services or treatments provided by dispatched practitioners. Professional liability remains with the individual practitioner and/or the facility where services are rendered.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i class="fas fa-copyright text-blue-600"></i>
+                        4. Intellectual Property
+                    </h4>
+                    <p class="text-sm">All branding, logos, and website content are the exclusive property of K&amp;P Wellness Partners. Unauthorized use, reproduction, or distribution is strictly prohibited.</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                    <p class="text-xs text-blue-800 font-medium">By using our website or requesting a dispatch, you agree to these terms. We reserve the right to modify these terms at any time.</p>
+                </div>
+            </div>
+            <div class="p-8 border-t border-slate-100 bg-slate-50 text-center">
+                <button onclick="closeTermsModal()" class="px-8 py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition shadow-lg">
+                    I Understand
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Mobile Menu Toggle
         function toggleMobileMenu() {
@@ -785,7 +838,28 @@
             modal.classList.remove('flex');
             document.body.style.overflow = '';
         }
-        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeTechModal(); });
+
+        // Terms Modal
+        function openTermsModal() {
+            const modal = document.getElementById('termsModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeTermsModal(event) {
+            if (event && event.target !== event.currentTarget) return;
+            const modal = document.getElementById('termsModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', e => { 
+            if (e.key === 'Escape') {
+                closeTechModal();
+                closeTermsModal();
+            }
+        });
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
