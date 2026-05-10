@@ -659,7 +659,7 @@
             <div class="border-t border-slate-800 pt-8 flex flex-col md:row justify-between items-center text-sm text-slate-500">
                 <p>&copy; 2026 K&amp;P Wellness Partners. All rights reserved.</p>
                 <div class="flex gap-8 text-sm text-slate-400">
-                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="javascript:void(0)" onclick="openPrivacyModal()" class="hover:text-white transition">Privacy Policy</a>
                     <a href="javascript:void(0)" onclick="openTermsModal()" class="hover:text-white transition">Terms of Service</a>
                 </div>
             </div>
@@ -831,6 +831,62 @@
         </div>
     </div>
 
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-slate-900/90 backdrop-blur-sm" onclick="closePrivacyModal(event)">
+        <div class="bg-white rounded-[2rem] w-full max-w-2xl max-h-[80vh] overflow-hidden shadow-2xl flex flex-col" onclick="event.stopPropagation()">
+            <div class="p-8 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900">Privacy Policy</h3>
+                    <p class="text-sm text-slate-500">Last Updated: May 10, 2026</p>
+                </div>
+                <button onclick="closePrivacyModal()" class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-slate-400 hover:text-slate-900 transition border border-slate-100">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-10 overflow-y-auto text-slate-600 leading-relaxed space-y-8">
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i class="fas fa-user-check text-blue-600"></i>
+                        1. Information We Collect
+                    </h4>
+                    <p class="text-sm">We collect personal information that you voluntarily provide to us when you request a dispatch or contact us. This includes your name, email address, phone number, facility type, and any specific health-related inquiries you submit via our forms.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i class="fas fa-sync text-amber-600"></i>
+                        2. How We Use Your Information
+                    </h4>
+                    <p class="text-sm">Your information is used primarily to process dispatch requests, communicate regarding appointments, and ensure the assigned practitioner has the necessary context to provide care. We also use data to improve our website experience and for clinical quality control.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i class="fas fa-share-alt text-emerald-600"></i>
+                        3. Sharing of Information
+                    </h4>
+                    <p class="text-sm">We share your contact and facility information ONLY with the specific practitioner assigned to your request. We do NOT sell, rent, or trade your personal data with third-party marketing companies. We may disclose information if required by law or to protect the safety of our practitioners.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i class="fas fa-lock text-blue-600"></i>
+                        4. Data Security &amp; Retention
+                    </h4>
+                    <p class="text-sm">We implement industry-standard security measures to protect your data. However, no method of transmission over the internet is 100% secure. We retain your information for as long as necessary to fulfill the purposes outlined in this policy or to comply with legal/clinical record-keeping requirements in Ontario.</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                    <p class="text-xs text-blue-800 font-bold uppercase mb-2">PIPEDA Compliance</p>
+                    <p class="text-xs text-blue-800 leading-relaxed">Our privacy practices are designed to comply with the Personal Information Protection and Electronic Documents Act (PIPEDA) of Canada. By using our services, you consent to the collection and use of your data as described.</p>
+                </div>
+            </div>
+            <div class="p-8 border-t border-slate-100 bg-slate-50 text-center">
+                <button onclick="closePrivacyModal()" class="px-8 py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition shadow-lg">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
     <script>
         // Mobile Menu Toggle
         function toggleMobileMenu() {
@@ -871,10 +927,26 @@
             document.body.style.overflow = '';
         }
 
+        // Privacy Modal
+        function openPrivacyModal() {
+            const modal = document.getElementById('privacyModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function closePrivacyModal(event) {
+            if (event && event.target !== event.currentTarget) return;
+            const modal = document.getElementById('privacyModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
         document.addEventListener('keydown', e => { 
             if (e.key === 'Escape') {
                 closeTechModal();
                 closeTermsModal();
+                closePrivacyModal();
             }
         });
 
