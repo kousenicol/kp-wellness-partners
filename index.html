@@ -243,11 +243,17 @@
                     </p>
                     <div class="mt-10 flex items-center space-x-6">
                         <div class="flex -space-x-3">
-                            <img src="https://images.unsplash.com/photo-1559839734-2b71f1e598c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-4 border-white object-cover">
-                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-4 border-white object-cover">
-                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="w-12 h-12 rounded-full border-4 border-white object-cover">
+                            <div class="w-12 h-12 rounded-full border-4 border-white bg-blue-100 flex items-center justify-center text-blue-600 shadow-sm">
+                                <i class="fas fa-hospital text-lg"></i>
+                            </div>
+                            <div class="w-12 h-12 rounded-full border-4 border-white bg-emerald-100 flex items-center justify-center text-emerald-600 shadow-sm">
+                                <i class="fas fa-clinic-medical text-lg"></i>
+                            </div>
+                            <div class="w-12 h-12 rounded-full border-4 border-white bg-amber-100 flex items-center justify-center text-amber-600 shadow-sm">
+                                <i class="fas fa-user-md text-lg"></i>
+                            </div>
                         </div>
-                        <p class="text-sm text-slate-500 font-medium">Trusted by <span class="text-amber-600 font-bold">50+</span> Clinics in Ontario</p>
+                        <p class="text-lg text-slate-700 font-extrabold tracking-tight">Trusted by <span class="text-amber-600">50+</span> Clinics in Ontario</p>
                     </div>
                 </div>
                 <div class="lg:w-1/2 mt-12 lg:mt-0 relative">
@@ -659,16 +665,16 @@
                         </div>
                     </div>
 
-                    <!-- Unique Callout Card -->
-                    <div class="relative bg-slate-900 p-8 sm:p-10 rounded-[2rem] border border-slate-800 shadow-2xl overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700"></div>
+                    <!-- Unique Callout Card (Optimized size) -->
+                    <div class="relative bg-slate-900 p-6 sm:p-8 rounded-[2rem] border border-slate-800 shadow-2xl overflow-hidden group max-w-2xl">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-700"></div>
                         <div class="relative z-10">
-                            <h4 class="text-2xl font-bold text-white mb-3 tracking-wide">"Experience Wisdom, Live Like Royalty."</h4>
-                            <p class="text-amber-400 font-serif text-lg mb-6">왕의 선택, 당신의 건강</p>
+                            <h4 class="text-xl sm:text-2xl font-bold text-white mb-2 tracking-wide">"Experience Wisdom, Live Like Royalty."</h4>
+                            <p class="text-amber-400 font-serif text-base mb-5">왕의 선택, 당신의 건강</p>
                             
-                            <div class="flex items-start gap-4 p-4 bg-white/5 rounded-2xl border border-white/10">
-                                <div class="w-12 h-12 bg-amber-500 text-slate-900 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-mortar-pestle text-xl"></i>
+                            <div class="flex items-start gap-4 p-4 bg-white/5 rounded-2xl border border-white/10 mb-6">
+                                <div class="w-10 h-10 bg-amber-500 text-slate-900 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-mortar-pestle text-lg"></i>
                                 </div>
                                 <div>
                                     <p class="text-white font-bold text-sm mb-1">Custom Individual Compounding</p>
@@ -676,14 +682,14 @@
                                 </div>
                             </div>
 
-                            <div class="mt-8">
-                                <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-amber-500 hover:bg-amber-600 text-slate-900 rounded-xl font-bold transition shadow-lg shadow-amber-500/20 w-full sm:w-auto">
+                            <div class="flex flex-col sm:flex-row items-center gap-4">
+                                <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 bg-amber-500 hover:bg-amber-600 text-slate-900 rounded-xl font-bold transition shadow-lg shadow-amber-500/20 w-full sm:w-auto text-sm">
                                     Inquire About Gongjindan
-                                    <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                    <i class="fas fa-arrow-right ml-2 text-xs"></i>
                                 </a>
-                                <button onclick="openTechModal()" class="inline-flex items-center gap-2 text-amber-600 font-bold hover:text-amber-700 transition group ml-6">
+                                <button onclick="openTechModal()" class="inline-flex items-center gap-2 text-amber-500/80 font-bold hover:text-amber-500 transition group text-sm">
                                     Learn more about our technology
-                                    <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                                    <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
                                 </button>
                             </div>
                         </div>
