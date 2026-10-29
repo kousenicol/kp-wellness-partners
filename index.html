@@ -11,43 +11,83 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://www.knpwellnesspartners.ca/">
     
-    <!-- Advanced Structured Data (JSON-LD) -->
+    <!-- Advanced Structured Data (JSON-LD) for Local SEO & Google Maps -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HealthAndBeautyBusiness",
-      "name": "K&P Wellness Partners",
-      "alternateName": ["KNP Wellness Partners", "K&P", "KNP"],
-      "url": "https://www.knpwellnesspartners.ca/",
-      "logo": "https://www.knpwellnesspartners.ca/kp_logo_final.png",
-      "image": "https://www.knpwellnesspartners.ca/kp_logo_final.png",
-      "description": "Professional Acupuncture & TCM practitioner dispatch services in Ontario. Even for a single patient, we dispatch the best acupuncturists.",
-      "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": "Ontario"
-      },
-      "publicAccess": false,
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Wellness Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Acupuncture Dispatch"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Korean Detox Program"
-            }
-          }
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "K&P Wellness Clinic",
+        "alternateName": ["KNP Wellness Clinic", "K&P Acupuncture"],
+        "url": "https://www.knpwellnesspartners.ca/",
+        "logo": "https://www.knpwellnesspartners.ca/kp_logo_final.png",
+        "image": "https://www.knpwellnesspartners.ca/kp_logo_final.png",
+        "telephone": "+16479832684",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "122 Lowe Blvd",
+          "addressLocality": "Newmarket",
+          "addressRegion": "ON",
+          "postalCode": "L3Y 5T2",
+          "addressCountry": "CA"
+        },
+        "description": "Premium Acupuncture, Massage Therapy, and Pain Management Clinic located in Newmarket, Ontario.",
+        "medicalSpecialty": [
+          "https://schema.org/Acupuncture",
+          "https://schema.org/MassageTherapy"
         ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "HealthAndBeautyBusiness",
+        "name": "K&P Wellness Partners",
+        "alternateName": ["KNP Wellness Partners", "K&P", "KNP"],
+        "url": "https://www.knpwellnesspartners.ca/",
+        "logo": "https://www.knpwellnesspartners.ca/kp_logo_final.png",
+        "image": "https://www.knpwellnesspartners.ca/kp_logo_final.png",
+        "telephone": "+16479832684",
+        "description": "Professional Acupuncture & TCM practitioner dispatch services in Ontario. Even for a single patient, we dispatch the best acupuncturists. Offering Korean Style 16-Day Detox and Gongjindan.",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Ontario"
+        },
+        "publicAccess": false,
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Wellness Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Acupuncture Dispatch"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "16-Day Korean Detox Program"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Gongjindan (공진단)"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Winter Immune Boost Promotion"
+              }
+            }
+          ]
+        }
       }
-    }
+    ]
     </script>
 
     <!-- FAQ Structured Data -->
@@ -284,22 +324,55 @@
     </section>
 
     <!-- Promotion Section -->
-    <section id="promotion-section" class="py-16 bg-red-50/30 border-y border-red-100/40">
+    <section id="promotion-section" class="py-16 bg-gradient-to-b from-sky-50/40 via-red-50/20 to-white border-y border-red-100/50 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
                 <div class="lg:w-1/2">
-                    <span class="inline-flex items-center px-5 py-2 text-white bg-gradient-to-r from-red-500 to-rose-600 rounded-full text-sm font-extrabold uppercase tracking-wider mb-4 shadow-md shadow-red-100/50">
-                        <i class="fas fa-gift mr-2 animate-bounce"></i> Limited Time Offer (Sep - Oct)
+                    <span class="inline-flex items-center px-5 py-2 text-white bg-gradient-to-r from-red-500 via-rose-500 to-amber-600 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4 shadow-md shadow-red-100/50">
+                        <i class="fas fa-snowflake mr-2"></i> 2 Month Special Promotion • Winter Immunity
                     </span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mb-4">
-                        Special <span class="text-red-600">Facial Herbal</span> Promotion
+                        Signature <span class="text-red-600">Winter Immune Boost</span> Package
                     </h2>
-                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                        Experience our premium K-Beauty Glow & Lift Care packages. Designed with traditional wisdom and modern technology to revitalize and nourish your skin. Take advantage of our exclusive <strong class="text-red-600 font-bold">$150 OFF</strong> promotion!
+                    <p class="text-base sm:text-lg text-slate-600 mb-5 leading-relaxed">
+                        Boost your immunity for the cold winter season! Designed to support immune defense, healthy blood circulation, liver function, and fatigue recovery. Includes a complete holistic care package crafted with traditional Korean wisdom and modern wellness.
                     </p>
+
+                    <!-- Price Highlight Box -->
+                    <div class="bg-white rounded-2xl p-4 sm:p-5 border border-red-100 shadow-sm mb-6 flex flex-wrap items-center justify-between gap-4">
+                        <div>
+                            <span class="text-[11px] uppercase font-extrabold tracking-wider text-slate-400 block mb-1">Limited Time Special Offer</span>
+                            <div class="flex items-baseline gap-3">
+                                <span class="text-slate-400 line-through text-lg">Regular $850</span>
+                                <span class="text-3xl sm:text-4xl font-black text-red-600">$700</span>
+                                <span class="px-2.5 py-0.5 rounded-full bg-red-100 text-red-700 text-xs font-black tracking-wide border border-red-200">$150 OFF</span>
+                            </div>
+                        </div>
+                        <div class="text-xs text-slate-500 text-left sm:text-right">
+                            <span class="font-bold text-slate-800"><i class="fas fa-check text-emerald-600 mr-1"></i>Customized for All Ages</span><br>
+                            <span class="text-slate-500">100% Traditional Decoction</span>
+                        </div>
+                    </div>
+
+                    <!-- Package Inclusions Badges -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+                        <div class="bg-white/90 p-3 rounded-xl border border-slate-200/80 shadow-sm flex items-center gap-2.5">
+                            <i class="fas fa-clipboard-check text-blue-600 text-base flex-shrink-0"></i>
+                            <span class="text-xs font-bold text-slate-800 leading-tight">Full TCM Assessment</span>
+                        </div>
+                        <div class="bg-white/90 p-3 rounded-xl border border-slate-200/80 shadow-sm flex items-center gap-2.5">
+                            <i class="fas fa-bolt text-purple-600 text-base flex-shrink-0"></i>
+                            <span class="text-xs font-bold text-slate-800 leading-tight">2x Magnetic Needling</span>
+                        </div>
+                        <div class="bg-white/90 p-3 rounded-xl border border-slate-200/80 shadow-sm flex items-center gap-2.5">
+                            <i class="fas fa-mortar-pestle text-rose-600 text-base flex-shrink-0"></i>
+                            <span class="text-xs font-bold text-slate-800 leading-tight">16-Day Korean Herbal</span>
+                        </div>
+                    </div>
+
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="javascript:void(0)" onclick="openPromoModal()" class="inline-flex items-center justify-center px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold transition shadow-lg shadow-red-100 whitespace-nowrap">
-                            View Promotion Details
+                        <a href="javascript:void(0)" onclick="openPromoModal()" class="inline-flex items-center justify-center px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold transition shadow-lg shadow-red-200 whitespace-nowrap gap-2">
+                            <i class="fas fa-search-plus"></i> View Promotion Flyer
                         </a>
                         <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-xl font-bold hover:bg-slate-50 transition">
                             Book Consultation
@@ -307,9 +380,13 @@
                     </div>
                 </div>
                 <div class="lg:w-1/2 w-full flex justify-center">
-                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white cursor-pointer group max-w-md" onclick="openPromoModal()">
-                        <img src="./promotion.jpg" alt="Special Promotion | K&P Wellness Partners" class="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white cursor-pointer group max-w-md bg-white" onclick="openPromoModal()">
+                        <img src="./promotion.jpg" alt="Winter Immune Boost Package Special Promotion | K&P Wellness Partners" class="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
+                            <span class="bg-white/95 text-slate-900 px-4 py-2 rounded-full text-xs font-extrabold shadow-lg flex items-center gap-1.5 backdrop-blur-sm">
+                                <i class="fas fa-expand text-red-600"></i> Click to Enlarge Flyer
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1016,22 +1093,31 @@
 
     <!-- Promotion Modal -->
     <div id="promoModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-slate-900/90 backdrop-blur-sm" onclick="closePromoModal(event)">
-        <div class="bg-white rounded-[2rem] w-full max-w-2xl max-h-[85vh] overflow-hidden shadow-2xl flex flex-col" onclick="event.stopPropagation()">
-            <div class="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+        <div class="bg-white rounded-[2rem] w-full max-w-2xl max-h-[90vh] overflow-hidden shadow-2xl flex flex-col" onclick="event.stopPropagation()">
+            <div class="p-5 sm:p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
                 <div>
-                    <h3 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
-                        <i class="fas fa-gift text-red-500 animate-bounce"></i>
-                        Special Promotion
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-2">
+                        <i class="fas fa-snowflake text-sky-500"></i>
+                        Winter Immune Boost Package
                     </h3>
-                    <p class="text-sm text-slate-500">Exclusive Wellness Offer | Period: Sep - Oct</p>
+                    <p class="text-xs sm:text-sm text-slate-500">2 Month Special Promotion • Regular $850 ➔ Now $700 ($150 OFF)</p>
                 </div>
                 <button onclick="closePromoModal()" class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-slate-400 hover:text-slate-900 transition border border-slate-100">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            <div class="p-4 overflow-y-auto flex flex-col items-center gap-4 bg-slate-50/50">
-                <img src="./promotion.jpg" alt="K&P Wellness Partners Special Promotion" class="max-h-[55vh] w-auto object-contain rounded-2xl shadow-lg border border-slate-100">
-                <img src="./kbeauty_lifting.jpg" alt="K-Beauty Lifting Course - Face Up, Eye Up, COS-UP Promotion | K뷰티 리프팅 코스" class="max-h-[55vh] w-auto object-contain rounded-2xl shadow-lg border border-slate-100">
+            <div class="p-4 sm:p-6 overflow-y-auto flex flex-col items-center bg-slate-50/50">
+                <img src="./promotion.jpg" alt="Winter Immune Boost Package Special Promotion | K&P Wellness Partners" class="max-h-[68vh] w-auto object-contain rounded-2xl shadow-lg border border-slate-200">
+            </div>
+            <div class="p-4 sm:p-5 bg-white border-t border-slate-100 flex flex-wrap justify-between items-center gap-3">
+                <div class="flex items-center gap-2.5">
+                    <span class="text-xs sm:text-sm text-slate-400 line-through">Reg. $850</span>
+                    <span class="text-xl sm:text-2xl font-black text-red-600">Now $700</span>
+                    <span class="px-2 py-0.5 rounded-full bg-red-100 text-red-700 text-xs font-black tracking-wide">$150 OFF</span>
+                </div>
+                <a href="#contact" onclick="closePromoModal()" class="px-6 py-2.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition shadow-md shadow-red-100 text-sm flex items-center gap-2">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                </a>
             </div>
         </div>
     </div>
