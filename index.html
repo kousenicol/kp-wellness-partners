@@ -34,8 +34,8 @@
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": 44.0365,
-          "longitude": -79.4615
+          "latitude": 44.068032,
+          "longitude": -79.443200
         },
         "hasMap": "https://www.google.com/maps/search/?api=1&query=122+Lowe+Blvd+Newmarket+ON+L3Y+5T2",
         "openingHours": "Mo-Sa 09:00-19:00",
@@ -149,7 +149,7 @@
                     </div>
                     <div class="flex flex-col">
                         <span class="text-lg sm:text-2xl font-black tracking-tight whitespace-nowrap flat-black">K&amp;P Wellness Partners &amp; Clinic</span>
-                        <span class="text-[10px] sm:text-xs text-blue-600 font-bold tracking-wide uppercase">Acupuncture • RMT Massage • Mobile Dispatch</span>
+                        <span class="text-[10px] sm:text-xs text-blue-600 font-bold tracking-wide uppercase">Newmarket Clinic (Acupuncture &amp; RMT) • Mobile Dispatch (Acupuncture &amp; TCM)</span>
                     </div>
                 </a>
 
@@ -222,10 +222,10 @@
                 <div class="lg:w-7/12">
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="inline-flex items-center px-3.5 py-1 text-blue-700 bg-blue-100/70 rounded-full text-xs font-bold uppercase tracking-wider border border-blue-200">
-                            <i class="fas fa-clinic-medical mr-1.5"></i> Newmarket Clinic Now Welcoming Patients
+                            <i class="fas fa-clinic-medical mr-1.5"></i> Newmarket Clinic: Acupuncture &amp; RMT Massage
                         </span>
                         <span class="inline-flex items-center px-3.5 py-1 text-emerald-700 bg-emerald-100/70 rounded-full text-xs font-bold uppercase tracking-wider border border-emerald-200">
-                            <i class="fas fa-car mr-1.5"></i> Ontario Mobile Dispatch
+                            <i class="fas fa-car mr-1.5"></i> Mobile Dispatch: TCM &amp; Acupuncture Only
                         </span>
                     </div>
 
@@ -234,7 +234,7 @@
                     </h1>
 
                     <p class="text-base sm:text-lg text-slate-600 mb-6 leading-relaxed">
-                        Welcome to <strong>K&amp;P Wellness Partners &amp; Clinic</strong>. We provide dedicated clinical care at our Newmarket clinic while offering Ontario's premier mobile dispatch for partner facilities.
+                        Welcome to <strong>K&amp;P Wellness Partners &amp; Clinic</strong>. We provide in-person clinical care (<strong>Acupuncture &amp; Registered Massage Therapy</strong>) at our Newmarket clinic, while offering Ontario's premier mobile dispatch strictly for <strong>Traditional Chinese Medicine &amp; Acupuncture</strong> to partner facilities (massage is clinic-only).
                     </p>
 
                     <!-- Trust Cards -->
@@ -639,11 +639,17 @@
     <section id="partners" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="inline-block px-4 py-1 mb-4 text-amber-700 bg-amber-100 rounded-full text-xs font-bold uppercase tracking-widest">
-                    Mobile Dispatch Service
+                <span class="inline-block px-4 py-1 mb-4 text-amber-800 bg-amber-100 rounded-full text-xs font-bold uppercase tracking-widest border border-amber-200">
+                    Acupuncture &amp; TCM Dispatch Only
                 </span>
                 <h2 class="text-3xl font-bold text-slate-900 mb-4">Where We Dispatch Across Ontario</h2>
-                <p class="text-slate-500 max-w-2xl mx-auto">We provide professional Acupuncture &amp; TCM dispatch services to a wide range of specialized facilities.</p>
+                <p class="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+                    We connect certified <strong>Acupuncture &amp; Traditional Chinese Medicine (TCM)</strong> practitioners with leading healthcare facilities and clinics.
+                </p>
+                <div class="mt-4 inline-flex items-center gap-2 bg-amber-50 border border-amber-200 text-amber-900 px-4 py-2.5 rounded-xl text-xs font-semibold shadow-sm">
+                    <i class="fas fa-info-circle text-amber-600 text-sm"></i>
+                    <span><strong>Please Note:</strong> Mobile dispatch is strictly for Acupuncture &amp; TCM. Registered Massage Therapy (RMT) is exclusively offered in-person at our Newmarket clinic.</span>
+                </div>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                 <div class="flex flex-col items-center p-6 bg-white rounded-2xl border border-slate-200 transition-all hover:shadow-lg">
@@ -735,7 +741,7 @@
                         <img src="./kp_logo_final.png" alt="K&amp;P Wellness Partners Logo" class="w-16 h-16 object-contain rounded-2xl">
                         <div class="flex flex-col">
                             <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">K&amp;P Wellness Partners &amp; Clinic</span>
-                            <span class="text-xs text-blue-400 font-bold uppercase tracking-wider">Acupuncture • RMT Massage • Mobile Dispatch</span>
+                            <span class="text-xs text-blue-400 font-bold uppercase tracking-wider">Acupuncture &amp; RMT Clinic (Newmarket) • Acupuncture &amp; TCM Dispatch (Ontario)</span>
                         </div>
                     </a>
                     <p class="text-slate-400 mb-8 max-w-md leading-relaxed text-sm">
@@ -793,7 +799,7 @@
                             <option value="promo-winter">❄️ Winter Immune Boost Package ($200 OFF)</option>
                             <option value="promo-detox">🌿 16-Day Korean Detox &amp; Weight Loss</option>
                             <option value="promo-gongjindan">👑 Imperial Gongjindan Consultation</option>
-                            <option value="dispatch-facility">🚗 Mobile Facility Dispatch (Rehab / Clinic / Spa)</option>
+                            <option value="dispatch-facility">🚗 Mobile Facility Dispatch (Acupuncture &amp; TCM Only - No Mobile Massage)</option>
                             <option value="other">Other Inquiry</option>
                         </select>
 
@@ -890,8 +896,8 @@
         // Initialize Map
         document.addEventListener('DOMContentLoaded', function () {
             // Leaflet map centered at 122 Lowe Blvd, Newmarket, ON L3Y 5T2
-            const lat = 44.0365;
-            const lng = -79.4615;
+            const lat = 44.068032;
+            const lng = -79.443200;
 
             const map = L.map('clinicMap').setView([lat, lng], 16);
 
